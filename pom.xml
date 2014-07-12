@@ -13,6 +13,23 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 
+	<scm>
+		<url>https://github.com/tokuhirom/caller/</url>
+		<connection>scm:git:git://github.com/tokuhirom/caller.git</connection>
+		<developerConnection>scm:git:git@github.com:tokuhirom/caller.git</developerConnection>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>repo</id>
+			<url>https://github.com/tokuhirom/maven/raw/master/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshot-repo</id>
+			<url>https://github.com/tokuhirom/maven/raw/master/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<repositories>
 		<repository>
 			<id>tokuhirom</id>
