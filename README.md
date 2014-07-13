@@ -17,6 +17,16 @@ Comparison chart:
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.806 sec
 ```
 
+
+## Motivation
+
+`(new Throwable()).getStackTrace()` aggregates all stack information. It makes slow if your code
+makes deep calling stack.
+
+But, there is a private API for getting specific stack. It's faster than normal approach.
+This library wraps the private API calling. And if it's unavailable, this library fallback to
+normal approach.
+
 ## SYNOPSIS
 
 		System.out.println(Caller.caller(0).getClassName());
