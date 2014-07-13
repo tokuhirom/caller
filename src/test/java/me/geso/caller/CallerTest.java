@@ -39,6 +39,12 @@ public class CallerTest {
 
 	@Test
 	public void testBenchmark() throws Exception {
+		Caller.initialized = false;
+		if (!Caller.privateMethodAvailable()) {
+			System.out.println("Reflection unavailable in your environment...");
+			return;
+		}
+
 		new Benchmark().add("normal", new Benchmark.Code() {
 			@SuppressWarnings("ThrowableInstanceNotThrown")
 			@Override

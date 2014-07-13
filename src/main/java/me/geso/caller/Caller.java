@@ -46,6 +46,13 @@ public class Caller {
 		}
 	}
 
+	public static boolean privateMethodAvailable() {
+		if (!initialized) {
+			initialize();
+		}
+		return Caller.getStackTraceElement != null;
+	}
+
 	private static void initializeReflectionStrategy() throws NoSuchMethodException {
 		Method method = Throwable.class.getDeclaredMethod("getStackTraceElement", int.class);
 		method.setAccessible(true);

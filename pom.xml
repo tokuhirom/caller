@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>my.own.groupid</groupId>
 	<artifactId>caller</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>caller</name>
 	<description>Fast method for getting Caller information</description>
 
